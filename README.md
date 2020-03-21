@@ -1,5 +1,6 @@
 # jwt-auth-in-expressjs
-#info
+jsonwebtoken user authentication in express js.
+# info
 1) In this project i am using hard coded email id and password for user login.
 2) in this project no user interface are added for user login.
 3) if you are trying to use this project to test api you need to use postman tool
