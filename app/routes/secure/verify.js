@@ -6,7 +6,7 @@ function verify(req, res, next) {
     // checking token is not correct then send status code and message
     if(!token) return res.status(402).send('no');
     // verifying token
-    const varify = jwt.verify(token, process.env.JWT_KEY, (err, verify)=>{
+    jwt.verify(token, process.env.JWT_KEY, (err, verify)=>{
 
         if(err){
             res.send(err.message)
